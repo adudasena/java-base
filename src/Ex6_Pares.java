@@ -7,9 +7,7 @@ public class Ex6_Pares {
         for (int i = 0; i <= 100; i++) {
            if (i % 2 ==0) {
                soma= soma + i;
-               System.out.println (soma);
-               continue;
-           }
+               System.out.println (soma);           }
         }
     }
 }
