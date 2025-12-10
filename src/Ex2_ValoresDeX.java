@@ -1,4 +1,4 @@
-public class Dia2_ValoresDeX {
+public class Ex2_ValoresDeX {
     public static void main(String[] args) {
 
         //atv: programa que o valor não é escolhido pelo usuário. Se x for par recebe

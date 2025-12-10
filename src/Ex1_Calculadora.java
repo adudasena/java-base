@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Dia1_Calculadora {
+public class Ex1_Calculadora {
     public static void main(String[] args) {
 
         //cria o scanner, pra ler as entradas
