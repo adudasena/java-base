@@ -35,12 +35,19 @@ public class Ex10_NotasEMoedas {
         System.out.println(nota2 + " nota(s) de R$ 2.00");
 
         //moedas
-        long moeda1= (centavos % 200)/100;
-        long moeda50= (centavos % 100)/50;
-        long moeda25= (centavos % 50)/25;
-        long moeda10= (centavos % 25)/10;
-        long moeda5= (centavos % 10)/5;
-        long moeda01= (centavos % 5);
+        centavos %= 200;
+
+        long moeda1 = centavos / 100;
+        centavos %= 100;
+        long moeda50 = centavos / 50;
+        centavos %= 50;
+        long moeda25 = centavos / 25;
+        centavos %= 25;
+        long moeda10 = centavos / 10;
+        centavos %= 10;
+        long moeda5 = centavos / 5;
+        centavos %= 5;
+        long moeda01 = centavos; //o que sobra
 
         System.out.println("MOEDAS:");
         System.out.println(moeda1 + " moeda(s) de R$ 1.00");
