@@ -34,6 +34,22 @@ public class Ex10_NotasEMoedas {
         System.out.println(nota5 + " nota(s) de R$ 5.00");
         System.out.println(nota2 + " nota(s) de R$ 2.00");
 
+        //moedas
+        long moeda1= (centavos % 200)/100;
+        long moeda50= (centavos % 100)/50;
+        long moeda25= (centavos % 50)/25;
+        long moeda10= (centavos % 25)/10;
+        long moeda5= (centavos % 10)/5;
+        long moeda01= (centavos % 5);
+
+        System.out.println("MOEDAS:");
+        System.out.println(moeda1 + " moeda(s) de R$ 1.00");
+        System.out.println(moeda50 + " moeda(s) de R$ 0.50");
+        System.out.println(moeda25 + " moeda(s) de R$ 0.25");
+        System.out.println(moeda10 + " moeda(s) de R$ 0.10");
+        System.out.println(moeda5 + " moeda(s) de R$ 0.05");
+        System.out.println(moeda01 + " moeda(s) de R$ 0.01");
+
     }
 }
 
