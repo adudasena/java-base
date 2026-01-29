@@ -25,13 +25,27 @@ public class Main {
 
         System.out.println(students.get(0).getName());
 
-        System.out.println("--Percorrendo a lista--");
+        System.out.println("--Exibindo os aprovados--");
         for (Ex14_Student.Student s : students) {
-            System.out.println("Aluno: " + s.getName());
-            System.out.println("Média: " + s.calculateAverage());
-            System.out.println("Aprovado: " + s.isApproved());
-            System.out.println("-----");
+            if (s.isApproved()) {
+                System.out.println(s.getName());
+            }
         }
 
+            System.out.println("--Removendo os reprovados--");
+            for (int i = students.size()-1; i>=0; i--) {
+                if (!students.get(i).isApproved()) {
+                    students.remove(i);
+                }
+            }
+
+            System.out.println("--Percorrendo a lista--");
+            for (Ex14_Student.Student s : students) {
+                System.out.println("Aluno: " + s.getName());
+                System.out.println("Média: " + s.calculateAverage());
+                System.out.println("Aprovado: " + s.isApproved());
+                System.out.println("-----");
+            }
+
+        }
     }
-}
