@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -9,8 +11,20 @@ public class Main {
         System.out.println(product1.totalValue());
         System.out.println("----------");
 
-        Ex14_Student.Student student = new Ex14_Student.Student("Fulano", 40.0, 20.0);
-        System.out.println(student.calculateAverage());
-        System.out.println(student.isApproved());
+        Ex14_Student.Student student1 = new Ex14_Student.Student("Fulano", 40.0, 20.0);
+        System.out.println(student1.calculateAverage());
+        System.out.println(student1.isApproved());
+
+        Ex14_Student.Student student2= new Ex14_Student.Student("Bia", 90.0, 80.0);
+        Ex14_Student.Student student3= new Ex14_Student.Student("Dudinha", 100.0, 70.0);
+
+        //adc ArrayList
+        ArrayList<Ex14_Student.Student> students = new ArrayList<>();
+        students.add(student1);
+        students.add(student2);
+        students.add(student3);
+
+
+
     }
 }
