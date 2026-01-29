@@ -39,11 +39,11 @@ public class Ex14_Student {
 
         //métodos
         public double calculateAverage() {
-            return (grade1 * grade2) / 2;
+            return (grade1 + grade2) / 2;
         }
 
         public boolean isApproved() {
-            if ((grade1 * grade2) / 2 >= 7.0) {
+            if ((grade1 + grade2) /2 >= 70) {
                 return true;
             } else {
                 return false;

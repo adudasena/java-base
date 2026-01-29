@@ -9,7 +9,7 @@ public class Main {
         System.out.println(product1.totalValue());
         System.out.println("----------");
 
-        Ex14_Student.Student student = new Ex14_Student.Student("João", 50, 90);
+        Ex14_Student.Student student = new Ex14_Student.Student("Fulano", 40.0, 20.0);
         System.out.println(student.calculateAverage());
         System.out.println(student.isApproved());
     }
